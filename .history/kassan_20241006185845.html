@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Kassan</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <header>
+
+        <section>
+
+            <img src="https://placehold.co/600x400 " width="600" height="400" alt="icon" class="icon" />
+
+
+            <input type="search" placeholder="Sök produkt" class="search">
+
+
+            <!-- 
+          om, jag har div för input typ så den ta hela raden
+              -->
+
+
+
+            <!--  <img src="bilder/favourite (1).png" alt="like">
+          <img src="bilder/shopping-cart.png" alt="cart">
+        -->
+
+            <div>
+                <nav class="NavList">
+                    <ul>
+                        <li><a href="#">Nyeter</a></li>
+                        <li class="ejnav"><a href="#">Kategoroer</a></li>
+                        <li><a href="#">Topplistan</a></li>
+                        <li><a href="#">Rea</a></li>
+                        <li><a href="#">Kampanjer</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <!--
+    samma header i start sidan
+
+    -->
+            <!--
+
+här behöver jag table
+
+-->
+
+    </header>
+
+
+
+
+
+
+
+    <main>
+        <section>
+            <p>
+            <div class="Kassa">
+                <h2>Kassan</h2>
+            </div>
+            </p>
+            <table>
+                <td>
+                    <tr>Produkt</tr>
+                </td>
+                <td>
+                    <tr>Antal</tr>
+                </td>
+                <td>
+                    <tr>Pris</tr>
+                </td>
+                <td>
+                    <tr>Totalt</tr>
+                </td>
+            </table>
+        </section>
+
+
+        <p>
+        <h2>
+            Kunduppgifter
+        </h2>
+
+        <article id="uppgifter">
+            <form action="#">
+
+
+                <p>
+                    <label for="firstName">Förnamn</label> <br>
+                    <input type="text" name="firstName" id="firstName" placeholder="Khaled" autocomplete="on" autofocus>
+                </p>
+                <p>
+                    <label for="lastNamed">Efternamn</label> <br>
+                    <input type="text" name="lastName" id="lastName" placeholder="Heteni" autocomplete="on">
+                </p>
+                <p>
+                    <label for="Email">E-post</label> <br>
+                    <input type="email" name="Email" id="Email" placeholder="info@gmail.com">
+                </p>
+
+                <fieldset>
+                    <br>
+                    <legend>Adress</legend>
+                    <p>
+                        <label for="street">Gata</label> <br>
+                        <input type="text" name="street" id="street" placeholder="Storgatan">
+                    </p>
+                    <p>
+                        <label for="ZipCode">Postnummer</label> <br>
+                        <input type="number" name="ZipCode" id="ZipCode" placeholder="12345">
+                    </p>
+                    <p>
+                        <label for="City">Stad</label> <br>
+                        <input type="text" name="City" id="City" placeholder="Stockholm">
+                    </p>
+                </fieldset>
+        </article>
+        <section>
+            <input type="checkbox">
+            <label for="News">Jag vill ta emot nyhetsbrev</label>
+            <div class="buy">
+                <button name="buy" type="submit" value="">Köp</button>
+            </div>
+        </section>
+
+        </p>
+        </form>
+    </main>
+
+
+    <!--  
+<p>
+<img src="bilder/planet-earth.png" alt="frakt" width="25" height="25" >
+Gratis frakt och returer
+</p>
+    <p>
+    <img src="bilder/plane.png" alt="frakt" width="25" height="25" >
+Expressfrakt
+    </p>
+    <p>
+    <img src="bilder/shield.png" alt="betalning" width="25" height="25" >
+    Säkra betalningar
+    </p>
+    <p>
+    <img src="bilder/smile.png" alt="Nyheter" width="25" height="25" >
+    Nyheter varje dag
+    </p>
+      -->
+    <hr class="no-speace">
+
+
+    <footer class="omOss">
+        <div class="list-container">
+            <div class="list">
+                <h3>Shopping</h3>
+                <li>
+                    <ul><a href="#">Vinterjackor</a></ul>
+                    <ul><a href="#">Pufferjackor</a></ul>
+                    <ul><a href="#">Kappa</a></ul>
+                    <ul><a href="#">Trenchcoats</a></ul>
+                </li>
+            </div>
+
+            <div class="list">
+                <h3>Mina Sidor</h3>
+                <li>
+                    <ul><a href="#">Mina Ordrar</a></ul>
+                    <ul><a href="#">Mitt Konto</a></ul>
+                </li>
+            </div>
+
+            <div class="list">
+                <h3>Kundtjänst</h3>
+                <li>
+                    <ul><a href="#">Returnpoulcy</a></ul>
+                    <ul><a href="#">Integritetspolicy</a></ul>
+                </li>
+            </div>
+        </div>
+        <div class="Company">&copy; Freaky Fashion</div>
+    </footer>
+
+
+</body>
+
+</html>

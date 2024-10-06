@@ -1,0 +1,411 @@
+body {
+    background-color: blue;
+    font-size: 2em;
+    display: grid;
+}
+
+
+.head-title {
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    gap: 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.search {
+    border: 2px solid gray;
+    border-radius: 12px;
+    padding: 5px;
+    display: inline;
+    background-image: url(bilder/search.png);
+    background-repeat: no-repeat;
+    background-position: 4px;
+    padding-left: 25px;
+
+}
+
+.NavList {
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+.hide-on-mobile {
+    display: none;
+}
+
+.nav-list-item {
+    a {
+        text-decoration: none;
+    }
+}
+
+.product {
+    position: relative;
+}
+
+.product-icon {
+    right: 20px;
+    bottom: 80px;
+    position: absolute;
+}
+
+.product-pic {
+    width: 100%;
+    height: auto;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+}
+
+.head-image {
+    width: 100%;
+}
+
+.wholeHead {
+    display: flex;
+    flex-direction: row;
+}
+
+.searchAndIcons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: auto 0 auto 20px;
+}
+
+.search {
+    height: 30px;
+    width: 100%;
+    max-width: 400px;
+    margin-right: 10px;
+}
+
+.headIcons {
+    display: flex;
+    gap: 10px;
+    margin-right: 0;
+    margin-left: auto;
+
+    img {
+        height: 30px;
+    }
+}
+
+.icon {
+    width: 300px;
+}
+
+.small-footer {
+    display: none;
+}
+
+header {
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+
+@media (max-width: 640px) {
+    .mid {
+        position: relative;
+        display: block;
+        font-size: medium;
+    }
+
+    li {
+        margin-bottom: 3px;
+    }
+
+    .icon {
+        width: 100%;
+    }
+
+    .wholeHead {
+        flex-direction: column;
+    }
+
+    .search {
+        height: 35px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .headIcons {
+        img {
+            height: 35px;
+        }
+    }
+
+    .searchAndIcons {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .small-footer {
+        display: block;
+    }
+
+    .normal-footer {
+        display: none;
+    }
+}
+
+@media (min-width: 640px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mid {
+        position: relative;
+        display: block;
+        font-size: large;
+    }
+
+    li {
+        display: inline;
+        margin-right: 5px;
+    }
+}
+
+body {
+    font-size: 1.5em;
+}
+
+@media (min-width: 1024px) {
+    .products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    body {
+        font-size: 1em;
+    }
+
+    .listan {
+        display: flex;
+    }
+
+    li {
+        display: inline;
+        margin-right: 5px;
+    }
+
+    .hide-on-mobile {
+        display: inline-block;
+    }
+
+    .head {
+        flex-direction: row-reverse;
+    }
+}
+
+
+
+
+
+/*
+    @media (max-width:1024px) {
+        .ejnav {
+            display: none;
+        }
+        
+      } 
+*/
+
+
+
+/*
+      @media print {
+        body {
+            font-size: 4em;
+        }
+        img {
+            display: none;
+        }
+      }
+*/
+
+
+
+/*
+här för Nyproduckt sidan
+*/
+
+
+.slide {
+    display: flex;
+    flex-direction: row;
+    gap: 20px
+}
+
+header>h3 {
+    position: absolute;
+    left: 10px;
+    bottom: auto;
+}
+
+.vänster {
+    display: grid;
+    grid-template-rows: 100%;
+    background-color: gray;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.liggTill {
+    hero-text button: hover
+}
+
+
+/*
+kassa sidan 
+*/
+
+.kassa {
+    text-align: center;
+
+}
+
+
+
+
+
+
+.buy>button {
+    display: grid;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 50%;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+
+
+
+.custom.btn-success {
+    color: red;
+}
+
+.no-space {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-top: 1px solid black;
+    /* Valfri färg eller stil på linjen */
+}
+
+
+body {
+    padding: 0;
+}
+
+.normal-footer {
+    padding: 15px;
+    background-color: rgb(207, 206, 206)
+}
+
+.list-container {
+    display: inline-flex;
+    justify-content: space-between;
+    /* Ser till att listorna sprids ut jämnt */
+    gap: 150px;
+    /* Mellanrum mellan listorna */
+}
+
+.list {
+    flex: 1;
+    /* Gör att listorna tar upp lika mycket plats */
+    padding-left: 15px;
+}
+
+.list h3 {
+    margin-bottom: 20px;
+}
+
+.list li {
+    list-style-type: none;
+    /* ingen punkter i listan */
+    padding: 0;
+}
+
+.list li ul {
+    margin-bottom: 10px;
+}
+
+
+
+
+/*
+Administration 
+*/
+
+.AD {
+    width: 115%;
+    padding-left: 15px;
+    margin-left: -25px;
+    margin-top: -25px;
+    float: left;
+    font-style: normal;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    display: flex;
+    color: white;
+}
+
+.PR {
+    background-color: rgb(209, 209, 208);
+    height: auto;
+    margin-left: -25px;
+    padding-left: 20px;
+    margin-right: auto;
+    padding-right: 70px;
+    padding-top: 15px;
+    font-weight: bold;
+    position: relative;
+}
+
+.AR {
+    position: relative;
+    ;
+    left: 200px;
+    top: -40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+.Company{
+    text-align: center;
+    bottom: auto;
+}

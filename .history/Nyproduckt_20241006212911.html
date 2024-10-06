@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyprodukt</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header class="AD">
+        <p>
+            Administration
+        </p>
+    </header>
+
+    <main class="AD-main">
+        <aside class="PR">
+            <p>Produkter</p>
+        </aside>
+
+        <section class="AD-section">
+            <form action="#"></form>
+                <h3>
+                    Ny produkt
+                </h3>
+                <div>
+                    <p>
+                        <label for="name">Name</label> <br>
+                        <input type="text" name="fullName" id="fullName" placeholder="Ange namn" required="true">
+                    </p>
+                </div>
+
+                <p>
+                    <label for="massage">Beskrivning</label> <br>
+                    <textarea name="message" id="message" cols="60" rows="10" placeholder="Ange beskrivning"></textarea>
+                </p>
+                <p>
+                    <label for="Pic">bild</label> <br>
+                    <input type="file" required="true" accept="image/*">
+                </p>
+                <p>
+                    <label for="sku">SKU</label><br>
+                    <input type="text" id="sku" name="sku" required pattern="[A-Za-z]{3}[0-9]{3}" title="AAA111"
+                        placeholder="Ange SKU"><br><br>
+
+                </p>
+                <p>
+                    <label for="Pris">Pris</label> <br>
+                    <input type="number">
+                </p>
+                <p>
+                    <label for="data">Publiseringsdatum</label> <br>
+                    <input type="date-local" name="data" id="data" value="10/05/2023">
+                </p>
+
+                <p>
+                    <label for="Kategorier">Kategorier</label> <br>
+                    <input type="checkbox">
+                    <label for="T-shirt">T-shirt</label><br>
+                    <input type="checkbox">
+                    <label for="Sommar">Sommar</label><br>
+                    <input type="checkbox">
+                    <label for="byxor">byxor</label><br>
+                    <input type="checkbox">
+                    <label for="skor">skor</label>
+                </p>
+
+                <div class="läggTill">
+                    <button name="läggTill" type="submit" value="">Läggtill</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
