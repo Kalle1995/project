@@ -19,12 +19,6 @@ body {
     gap: 15px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-}
 
 .search {
     border: 2px solid gray;
@@ -39,9 +33,9 @@ ul {
 }
 
 .NavList {
-    padding-bottom: 10px;
-    padding-top: 10px;
-
+    
+    margin-top: 10px;
+    
 }
 
 .hide-on-mobile {
@@ -60,8 +54,15 @@ ul {
 
 .product-icon {
     right: 20px;
-    bottom: 80px;
+    bottom: 70px;
     position: absolute;
+    width: 25px;
+    height: 25px;
+}
+.new-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 .product-pic {
@@ -129,6 +130,8 @@ main {
 
 
 
+
+
 @media (max-width: 640px) {
     .mid {
         position: relative;
@@ -171,7 +174,94 @@ main {
 
     .normal-footer {
         display: none;
+        list-style-type: none;
     }
+    .info {
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+    
+        p{
+            margin: 0;
+            margin-left: 10px;
+        }
+    }
+    .loremPic {
+        width:100;
+        height: auto;
+    }
+    .info-cart {
+        h2 {
+            font-size: large;
+            margin-top: 10px;
+        }
+        span {
+            font-family: monospace;           
+        }
+        p {
+            font-weight: 500;
+            margin-top: 10px;
+        }
+    }
+    .head-position {
+        position: relative;
+    }
+    
+    
+    
+    .put {
+        margin-top: 15px;
+        width: 100%; 
+    }
+
+    
+    .liknande {
+        display: none;
+        
+    }
+    .img-slide-section {
+        display: none;
+    }
+    .head-image {
+        width: 100%;
+    }
+    .first {
+        width: 100%;
+    }
+    .last {
+        width: 100%;
+    }
+    .email {
+        width: 100%;
+    }
+    table {
+        display: none;
+    }
+    .color {
+        width: 100;
+       
+    }
+    .svart {
+        border: solid;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding-top: 15px;
+        display: flex;
+        grid-template-rows: repeat(2, 1fr);
+        flex-direction: row;
+    }
+    
+       .vit {
+        border: solid;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        padding-top: 15px;
+        display: flex;
+        width: 100%;
+        
+    }
+
+
 }
 
 @media (min-width: 640px) {
@@ -188,8 +278,37 @@ main {
     li {
         display: inline;
         margin-right: 5px;
+   }
+    .info {
+        display: flex;
+        width: 50%;
+        margin-top: 20px;
+        align-items: center;
+    
+        p{
+            margin: 0;
+            margin-left: 10px;
+        
+        }
     }
-}
+    .All-info {
+       display: flex;
+       width:100%;
+       flex-wrap: wrap;
+       
+    }
+    .info-cart {
+        display: inline-flex;
+        
+    }
+    .liknande {
+        text-align: center;
+    }
+    .color {
+        display: none;
+    }
+    
+}   
 
 body {
     font-size: 1.5em;
@@ -223,33 +342,33 @@ body {
     .mid {
         font-size: medium;
     }
+    .info {
+        display: flex;
+       
+        margin-top: 20px;
+    
+        p{
+            margin: 0;
+            margin-left: 10px;
+        
+        }
+    }
+    .All-info {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .color {
+        display: none;
+    }
 }
 
 
 
 
 
-/*
-    @media (max-width:1024px) {
-        .ejnav {
-            display: none;
-        }
-        
-      } 
-*/
 
-
-
-/*
-      @media print {
-        body {
-            font-size: 4em;
-        }
-        img {
-            display: none;
-        }
-      }
-*/
 
 
 
@@ -291,13 +410,15 @@ header>h3 {
 /*
 kassa sidan 
 */
-
-.kassa {
+.Kassa {
     text-align: center;
-
 }
 
 
+table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+}
 
 
 
@@ -323,7 +444,7 @@ kassa sidan
 .no-space {
     margin: 0;
     padding: 0;
-    border: none;
+    border: ;
     border-top: 1px solid black;
     /* Valfri färg eller stil på linjen */
 }
@@ -336,9 +457,8 @@ kassa sidan
 .list-container {
     display: inline-flex;
     justify-content: space-between;
-    /* Ser till att listorna sprids ut jämnt */
-    gap: 150px;
-    /* Mellanrum mellan listorna */
+    gap: 200px;
+    
 }
 
 .list {
@@ -353,6 +473,11 @@ kassa sidan
 .list li {
     list-style-type: none;   
 }
+
+ul {
+    list-style-type: none;
+}
+
 
 
 
@@ -372,13 +497,14 @@ Administration
     padding: 0;
     display: flex;
     flex-direction: row;
-    height: 100%fro;
+    height: 100%;
 }
 
 .PR {
     background-color: rgb(209, 209, 208);
     height: 100%;
     width: 150px;
+    
 
     p {
         margin: 0;
@@ -397,21 +523,28 @@ Administration
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-.Company{
+.Company {
     text-align: center;
-    bottom: auto;
+
+}
+.prise {
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+
+.Levis {
+    font-weight: 100;
+    font-family:monospace;
+    margin-bottom: 20px;
+}
+.accordion-body {
+    list-style-type: none;
+    li {
+        margin-bottom: 10px;
+    }
+}
+.accordion-button {
+    font-weight: bold;
 }

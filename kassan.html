@@ -2,112 +2,115 @@
 <html lang="sv">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width='device-width', initial-scale=1.0">
-    <title>Kassan</title>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freaky Fashion</title>
+
+  <link rel="stylesheet" href="main.css" />
+
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+  <header>
+    <section>
+      <div class="wholeHead">
+        <img src="https://placehold.co/600x200 " alt="icon" class="icon" />
 
-    <header>
-        <section>
+        <div class="searchAndIcons">
+          <input type="search" placeholder="Sök produkt" class="search">
+          <div class="headIcons">
+            <a href="#"><img src="bilder/full heart.png" alt="favourite"></a>
+            <a href="#"><img src="bilder/cart.png" alt="cart"></a>
+          </div>
+        </div>
+      </div>
 
-            <img src="https://placehold.co/600x400 " width="600" height="400" alt="icon" class="icon" />
+    
+      <div>
+        <nav class="NavList">
+          <ul>
+            <li class=" flex-row nav-list-item"><a href="#">Nyeter</a></li>
+            <li class="nav-list-item hide-on-mobile ejnav"><a href="#">Kategoroer</a></li>
+            <li class="nav-list-item"><a href="#">Topplistan</a></li>
+            <li class="nav-list-item"><a href="#">Rea</a></li>
+            <li class="nav-list-item"><a href="#">Kampanjer</a></li>
+          </ul>
+        </nav>
+      </div>
 
+  
 
-            <input type="search" placeholder="Sök produkt   " class="search">
-
-
-            <!-- 
-          om, jag har div för input typ så den ta hela raden
-              -->
-
-
-
-            <!--  <img src="bilder/favourite (1).png" alt="like">
-          <img src="bilder/shopping-cart.png" alt="cart">
-        -->
-
-            <div>
-                <nav class="NavList">
-                    <ul>
-                        <li><a href="#">Nyeter</a></li>
-                        <li class="ejnav"><a href="#">Kategoroer</a></li>
-                        <li><a href="#">Topplistan</a></li>
-                        <li><a href="#">Rea</a></li>
-                        <li><a href="#">Kampanjer</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-
-            <!--
-    samma header i start sidan
-
-    -->
-            <!--
-
-här behöver jag table
-
--->
-
-    </header>
-
-
-
-
-
-
-
+    </section>
+  </header>
     <main>
-        <section>
             <p>
             <div class="Kassa">
                 <h2>Kassan</h2>
             </div>
             </p>
-            <table>
-                <td>
-                    <tr>Produkt</tr>
-                </td>
-                <td>
-                    <tr>Antal</tr>
-                </td>
-                <td>
-                    <tr>Pris</tr>
-                </td>
-                <td>
-                    <tr>Totalt</tr>
-                </td>
-            </table>
-        </section>
+            
+            <table class="table">
+                <tr>
+                  <th>produkt</th>
+                  <th>Antal</th>
+                  <th>Pros</th>
+                  <th>Totalt</th>
+                </tr>
+                <tr>
+                  <td>Svart T-shirt</td>
+                  <td>1</td>
+                  <td>199 kr</td>
+                  <td>199 kr</td>
 
+                </tr>
+                <tr>
+                  <td>vit T-Shirt</td>
+                  <td>2</td>
+                  <td>199 kr</td>
+                  <td>398 kr</td>
+                </tr>                
+              </table>
+              <div class="color">
+                
+              <div class="svart">
+                <p>1 * Svart T-Shirt</p>
+                <p>199 SEK</p>
+                <span>199 SEK</span>
+              </div>
+              
+            
+              <div class="vit">
+                <p>2 * vit T-Shirt</p>
+                <p>199 SEK</p>
+                <span>398 SEK</span>
+              </div>
+            </div>
 
-        <p>
-        <h2>
+        <h3>
             Kunduppgifter
-        </h2>
-
+        </h3>
+       
         <article id="uppgifter">
             <form action="#">
-
-
                 <p>
                     <label for="firstName">Förnamn</label> <br>
-                    <input type="text" name="firstName" id="firstName" placeholder="Khaled" autocomplete="on" autofocus>
+                    <input class="first" type="text" name="firstName" id="firstName" placeholder="Khaled" autocomplete="on" autofocus>
                 </p>
                 <p>
                     <label for="lastNamed">Efternamn</label> <br>
-                    <input type="text" name="lastName" id="lastName" placeholder="Heteni" autocomplete="on">
+                    <input class="last" type="text" name="lastName" id="lastName" placeholder="Heteni" autocomplete="on">
                 </p>
                 <p>
                     <label for="Email">E-post</label> <br>
-                    <input type="email" name="Email" id="Email" placeholder="info@gmail.com">
+                    <input class="email" type="email" name="Email" id="Email" placeholder="info@gmail.com">
                 </p>
 
                 <fieldset>
-                    <br>
                     <legend>Adress</legend>
                     <p>
                         <label for="street">Gata</label> <br>
@@ -122,38 +125,47 @@ här behöver jag table
                         <input type="text" name="City" id="City" placeholder="Stockholm">
                     </p>
                 </fieldset>
-        </article>
-        <section>
-            <input type="checkbox">
-            <label for="News">Jag vill ta emot nyhetsbrev</label>
-            <div class="buy">
-                <button name="buy" type="submit" value="">Köp</button>
-            </div>
-        </section>
+            </article>        
+                <section>
+                    <input type="checkbox">
+                    <label for="News">Jag vill ta emot nyhetsbrev</label>
+                    <div class="buy">  
+                        <button name="buy" type="submit" value="">Köp</button>
+                    </div>
+                </section>
+            </form>
+      
+     
+      
+        
+        
+        
 
-        </p>
-        </form>
+
+        <div class="All-info">
+            <div class="info">
+              <img src="bilder/planet-earth.png" width="30" alt="">
+              <p>Grattis frakt och returer</p>
+            </div>
+            <div class="info">
+              <img src="bilder/plane.png" width="30" alt="">
+              <p>Expressfrakt</p>
+            </div>
+            <div class="info">
+              <img src="bilder/shield.png" width="30" alt="">
+              <p>Säker betalningar</p>
+            </div>
+            <div class="info">
+              <img src="bilder/smile.png" width="30" alt="">
+              <p>Nyheter varje dag</p>
+            </div>
+          </div>
+    
+    
     </main>
 
 
-    <!--  
-<p>
-<img src="bilder/planet-earth.png" alt="frakt" width="25" height="25" >
-Gratis frakt och returer
-</p>
-    <p>
-    <img src="bilder/plane.png" alt="frakt" width="25" height="25" >
-Expressfrakt
-    </p>
-    <p>
-    <img src="bilder/shield.png" alt="betalning" width="25" height="25" >
-    Säkra betalningar
-    </p>
-    <p>
-    <img src="bilder/smile.png" alt="Nyheter" width="25" height="25" >
-    Nyheter varje dag
-    </p>
-      -->
+  
     <hr class="no-speace">
 
 
@@ -188,6 +200,58 @@ Expressfrakt
 
         <div class="Company">&copy; Freaky Fashion</div>
     </footer>
+    <footer class="small-footer">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Shopping
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <li>Vinterjackor</li>
+                <li>Pufferjackor</li>
+                <li>Kappa</li>
+                <li>Trenchcoats</li>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Mina Sidor
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <li>Mina Order</li>
+                <li>Mitt Konto</li>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Kundtjänst
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <li>Returnpolicy</li>
+                <li>Integritetspolicy</li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Company">&copy; Freaky Fashion</div>
+      </footer>
 
 
 </body>
